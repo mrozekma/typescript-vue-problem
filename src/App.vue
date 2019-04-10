@@ -13,7 +13,17 @@ export default Vue.extend({
   name: 'app',
   components: {
     HelloWorld
-  }
+  },
+  computed: {
+    foo: function() {
+      return this.bar;
+    },
+  },
+  data: function() {
+    return {
+      bar: true,
+    };
+  },
 });
 </script>
 
